@@ -1,12 +1,8 @@
+def is_square(x)
+   (0..x).each do |num|
+     return true if (num*num) == x
+   end
+   false
+ end
 
-
-def is_square(num)
-    if Math.sqrt(num) % 1 == 0
- puts "#{num} True"
-    else 
- puts   "#{num} False"
-    end
-end
-
-is_square(25)
-
+ puts is_square(9)
